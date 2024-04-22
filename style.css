@@ -1,0 +1,68 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+
+.container{
+    width: 900px;
+    height: 500px;
+    background-color: #f4f4f4;
+
+    position: relative;
+
+
+
+}
+
+.container .originimg{
+    width: 50%;
+    /* background-color: red; */
+
+   
+    cursor: pointer;
+    overflow: hidden;
+
+    position:relative;
+    top: 25%;
+    left: 10%;
+    
+}
+
+.originimg img{
+    width: 300px;
+
+}
+
+.container .showimg{
+    width: 50%;
+    /* background-color: green; */
+
+    position: absolute;
+    top:25%;
+    right:0%;
+
+    cursor: pointer;
+
+    transition: all .5s;
+
+    overflow: hidden;
+}
+
+
+.showimg img{
+    width: 300px;
+    /* border:10px solid #fff; */
+
+}
+
+
+.originimg.show img{
+    transform: scale(2);
+    /* border:none; */
+}
